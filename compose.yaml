@@ -7,7 +7,7 @@ services:
       - .:/app
     environment:
       APP_ENV: dev
-      DATABASE_URL: postgresql://appuser:qFq9TPj5GoNd9ftZ2fuSXexY1x1JqDlk@dpg-d4c2m5f5r7bs73a4qc6g-a/lecture14
+      DATABASE_URL: postgresql://appuser:password@database:5432/appdb
     depends_on:
       - database
   database:

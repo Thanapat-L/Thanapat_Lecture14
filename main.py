@@ -16,4 +16,4 @@ def read_root():
 def test_db():
     with engine.connect() as conn:
         result = conn.execute(text("SELECT 1"))
-        return {"db_result": result.one()[0]}
+        return {"db_result": 1+1}
