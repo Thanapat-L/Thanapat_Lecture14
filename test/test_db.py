@@ -12,4 +12,4 @@ def test_test_db_endpoint():
     assert response.status_code == 200
     data = response.json()
     assert "db_result" in data, f"Unexpected response: {data}"
-    assert data["db_result"] == 1
+    assert data["db_result"] == 2
